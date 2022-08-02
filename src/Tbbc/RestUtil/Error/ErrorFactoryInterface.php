@@ -31,5 +31,5 @@ interface ErrorFactoryInterface
      * @param ExceptionMappingInterface $mapping
      * @return ErrorInterface
      */
-    function createError(\Exception $exception, ExceptionMappingInterface $mapping);
+    function createError(\Throwable $exception, ExceptionMappingInterface $mapping);
 }
