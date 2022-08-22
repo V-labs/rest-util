@@ -29,7 +29,7 @@ interface ErrorFactoryInterface
      *
      * @param \Exception                $exception
      * @param ExceptionMappingInterface $mapping
-     * @return ErrorInterface
+     * @return ErrorInterface|null
      */
     function createError(\Throwable $exception, ExceptionMappingInterface $mapping);
 }
